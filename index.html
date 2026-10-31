@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AquaSentry — Autonomous Water Rescue Robot</title>
+<meta name="description" content="AquaSentry is a portable, AI-powered water rescue robot that detects a drowning person in real time and automatically launches a self-inflating lifebuoy. National Gold Award, China International College Students' Innovation Competition 2025." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<!-- ===================== NAVIGATION ===================== -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a class="brand" href="#top" aria-label="AquaSentry home">
+      <svg class="brand__mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+        <rect x="1.5" y="1.5" width="45" height="45" rx="13" fill="url(#bg)" />
+        <path d="M8 30c4.5 0 4.5-4 9-4s4.5 4 9 4 4.5-4 9-4 4.5 4 9 4" stroke="#12c2c8" stroke-width="2.6" stroke-linecap="round" fill="none"/>
+        <circle cx="24" cy="19" r="7.5" stroke="#ffffff" stroke-width="2.6" fill="none"/>
+        <path d="M24 11.5v15M16.5 19h15" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round"/>
+        <defs>
+          <linearGradient id="bg" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#0e5c6b"/><stop offset="1" stop-color="#06232f"/>
+          </linearGradient>
+        </defs>
+      </svg>
+      <span>
+        <span class="brand__name">AquaSentry</span><br />
+        <span class="brand__tag">Water Rescue Robotics</span>
+      </span>
+    </a>
+
+    <nav class="nav__links" aria-label="Main">
+      <a href="#overview">Overview</a>
+      <a href="#technology">Technology</a>
+      <a href="#film">Film</a>
+      <a href="#team">Team</a>
+      <a href="#partners">Deployment</a>
+    </nav>
+
+    <a class="btn btn--light nav__cta" href="#contact">Partner with us</a>
+
+    <button class="nav__toggle" type="button" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="top">
+  <div class="hero__bg" aria-hidden="true">
+    <div class="hero__grid"></div>
+    <div class="hero__glow"></div>
+    <div class="hero__glow hero__glow--2"></div>
+  </div>
+
+  <div class="container">
+    <div class="hero__inner">
+      <div class="hero__copy">
+        <div class="hero__badge">
+          <b>2025 Gold</b>
+          National Innovation Potential Award · Top 20 nationwide
+        </div>
+
+        <h1>Autonomous water rescue, launched in <em>seconds</em>.</h1>
+
+        <p class="hero__sub">
+          AquaSentry watches the water, identifies a drowning person in real time, tracks the
+          target and fires a self-inflating lifebuoy — automatically. Rescue no longer depends
+          on who happens to be looking.
+        </p>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#film">
+            Watch the competition film
+            <svg class="arrow" width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="btn btn--light" href="#technology">Explore the technology</a>
+        </div>
+
+        <div class="hero__stats">
+          <div class="hero__stat"><span>98.7<i>%</i></span><small>Recognition accuracy</small></div>
+          <div class="hero__stat"><span>2<i>ms</i></span><small>Inference per frame</small></div>
+          <div class="hero__stat"><span>9<i>kg</i></span><small>Total system weight</small></div>
+          <div class="hero__stat"><span>24/7</span><small>Autonomous monitoring</small></div>
+        </div>
+      </div>
+
+      <div class="hero__visual">
+        <figure class="hero__card">
+          <img class="hero__product" src="assets/img/banner-1-gIGYr_IW.png" alt="AquaSentry water rescue robot" />
+        </figure>
+        <div class="hero__pill hero__pill--a"><i class="hero__dot"></i> Target locked · lifebuoy armed</div>
+        <div class="hero__pill hero__pill--b"><i class="hero__dot"></i> Two-person carry · deployed in 60 s</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-hint"><span>Scroll</span><i></i></div>
+
+  <div class="hero__waves" aria-hidden="true">
+    <svg viewBox="0 0 1440 170" preserveAspectRatio="none">
+      <path d="M0 96c160-46 320-46 480 0s320 46 480 0 320-46 480 0v74H0z" fill="#ffffff" opacity=".95"/>
+      <path d="M0 118c160-40 320-40 480 0s320 40 480 0 320-40 480 0v52H0z" fill="#ffffff" opacity=".6"/>
+    </svg>
+  </div>
+</section>
+
+<!-- ===================== STRIP ===================== -->
+<div class="strip" aria-hidden="true">
+  <div class="strip__track">
+    <span>AI computer vision</span><span>Automatic lifebuoy launch</span><span>Portable · 9 kg</span>
+    <span>Multi-scenario deployment</span><span>Offline local inference</span><span>24/7 surface monitoring</span>
+    <span>AI computer vision</span><span>Automatic lifebuoy launch</span><span>Portable · 9 kg</span>
+    <span>Multi-scenario deployment</span><span>Offline local inference</span><span>24/7 surface monitoring</span>
+  </div>
+</div>
+
+<!-- ===================== OVERVIEW ===================== -->
+<section class="section" id="overview">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Overview</span>
+      <h2 class="h2">A rescue robot that acts before the crowd reacts</h2>
+      <p class="lead">
+        Through innovative hardware design and cutting-edge software technology, AquaSentry can
+        quickly and accurately locate a drowning person in a wide range of water environments and
+        automatically launch a self-inflating lifebuoy — greatly improving rescue efficiency and
+        reducing the dependence on manpower.
+      </p>
+    </div>
+
+    <figure class="clip clip--wide reveal">
+      <div class="clip__media">
+        <video src="assets/video/introduction.mp4" poster="assets/img/poster-introduction.jpg"
+               muted loop playsinline preload="none"
+               aria-label="Exploded assembly animation of the AquaSentry platform"></video>
+      </div>
+      <figcaption>
+        <strong>Exploded assembly</strong> — the launcher head, the sensor turret and the hull separate
+        and re-seat, showing how one 9 kg unit carries everything a rescue needs.
+      </figcaption>
+    </figure>
+
+    <div class="cards">
+      <article class="card reveal">
+        <div class="card__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/><circle cx="12" cy="12" r="3.6" stroke="currentColor" stroke-width="1.9"/></svg>
+        </div>
+        <h3 class="h3">High degree of automation</h3>
+        <p>
+          Powered by an advanced YOLOv8n algorithm and a PID control system, AquaSentry identifies
+          the drowning person and launches the lifebuoy with precision — with no human intervention
+          required.
+        </p>
+        <div class="card__meta">Detect → track → launch, fully unattended</div>
+      </article>
+
+      <article class="card reveal reveal-delay-1">
+        <div class="card__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 8.5 12 4l8 4.5v7L12 20l-8-4.5v-7Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M4 8.5 12 13l8-4.5M12 13v7" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        </div>
+        <h3 class="h3">Portability &amp; multi-scenario adaptability</h3>
+        <p>
+          A detachable design weighing only 9 kg makes AquaSentry easy to carry and deploy. It works
+          efficiently in indoor pools, outdoor lakes and post-disaster emergency rescue alike.
+        </p>
+        <div class="card__meta">One system · pools, lakes, flood response</div>
+      </article>
+
+      <article class="card reveal reveal-delay-2">
+        <div class="card__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8.4" stroke="currentColor" stroke-width="1.8"/><path d="M12 7.6V12l3.1 1.9" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3 class="h3">Low latency &amp; high precision</h3>
+        <p>
+          The combination of hardware and software keeps every rescue task accurate even under
+          high-pressure conditions, outperforming comparable products by a wide margin.
+        </p>
+        <div class="card__meta">2 ms inference · 1.12% packet loss rate</div>
+      </article>
+    </div>
+
+    <div class="stats reveal" style="margin-top:56px">
+      <div class="stat">
+        <b><span data-count="98.7" data-decimals="1">0</span><i>%</i></b>
+        <span>Recognition accuracy</span>
+        <p>Trained on 12,000 labelled drowning images with data augmentation.</p>
+      </div>
+      <div class="stat">
+        <b><span data-count="2">0</span><i>ms</i></b>
+        <span>Inference time per frame</span>
+        <p>Local offline inference on an NVIDIA GeForce RTX 3060 Laptop GPU.</p>
+      </div>
+      <div class="stat">
+        <b><span data-count="9">0</span><i>kg</i></b>
+        <span>System weight</span>
+        <p>Detachable, two-person carry, deployable in under a minute.</p>
+      </div>
+      <div class="stat">
+        <b><span data-count="1.12" data-decimals="2">0</span><i>%</i></b>
+        <span>Packet loss rate</span>
+        <p>Stable multi-protocol link between vision, control and launcher.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PIPELINE ===================== -->
+<section class="section section--ink">
+  <div class="container">
+    <div class="section-head section-head--center reveal">
+      <span class="eyebrow">How it works</span>
+      <h2 class="h2">From a splash in the water to a lifebuoy on the way</h2>
+      <p class="lead">Four steps, executed entirely on the device, without waiting for a human operator.</p>
+    </div>
+
+    <div class="pipeline">
+      <div class="step reveal">
+        <div class="step__no">01</div>
+        <h4>Watch</h4>
+        <p>An ultra-high-speed industrial camera keeps the water surface under continuous surveillance, day and night.</p>
+        <em>Always on · no blind spots</em>
+      </div>
+      <div class="step reveal reveal-delay-1">
+        <div class="step__no">02</div>
+        <h4>Identify</h4>
+        <p>The exclusive YOLOv8n model separates a drowning person from swimmers, reflections and surface clutter.</p>
+        <em>98.7% accuracy</em>
+      </div>
+      <div class="step reveal reveal-delay-2">
+        <div class="step__no">03</div>
+        <h4>Track</h4>
+        <p>A PID control loop and a high-precision IMU hold the target centred while the launcher aligns itself.</p>
+        <em>Pitch + yaw, two degrees of freedom</em>
+      </div>
+      <div class="step reveal reveal-delay-3">
+        <div class="step__no">04</div>
+        <h4>Launch</h4>
+        <p>Two brushless motors spin a four-roller friction mechanism that throws the self-inflating lifebuoy to the target.</p>
+        <em>Long-range, precise delivery</em>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FILM ===================== -->
+<section class="section section--tint" id="film">
+  <div class="container">
+    <div class="section-head section-head--center reveal">
+      <span class="eyebrow">The film</span>
+      <h2 class="h2">AquaSentry at the China International College Students' Innovation Competition</h2>
+      <p class="lead">
+        The official promotional film presented at the national finals — where the team took the
+        Innovation Potential Award, the highest gold-level honour of the competition's
+        Emerging Talent track, granted to only 20 projects nationwide.
+      </p>
+    </div>
+
+    <figure class="film__frame reveal" id="film-frame">
+      <video id="promo-video" playsinline preload="metadata"
+             poster="assets/img/film-poster.jpg"
+             src="assets/video/aquasentry-competition-film.mp4"></video>
+      <div class="film__overlay">
+        <button class="film__play" type="button" aria-label="Play the promotional film">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M8 5.5v13l11-6.5-11-6.5Z" fill="currentColor"/>
+          </svg>
+        </button>
+        <figcaption class="film__caption">
+          Official competition film · Hydro AI-D · presented by the AquaSentry team
+        </figcaption>
+      </div>
+    </figure>
+
+    <div class="film__meta reveal">
+      <span class="chip">China International College Students' Innovation Competition (2025)</span>
+      <span class="chip">Innovation Potential Award · National Gold</span>
+      <span class="chip">Top 20 projects nationwide</span>
+      <span class="chip">1 invention patent · 1 software copyright</span>
+      <span class="chip">Runtime 1:36</span>
+    </div>
+
+    <p class="note reveal">
+      <strong>In the film:</strong> the team walks through why the robot exists, how the vision model was
+      trained, how the two-degree-of-freedom launcher was engineered, and what a faster response
+      means for the people still in the water.
+    </p>
+  </div>
+</section>
+
+<!-- ===================== TECHNOLOGY ===================== -->
+<section class="section" id="technology">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Technology</span>
+      <h2 class="h2">Engineering behind every launch</h2>
+      <p class="lead">
+        Four tightly coupled systems turn a camera frame into a lifebuoy in the water — mechanics,
+        sensing, algorithms and control.
+      </p>
+    </div>
+
+    <div class="cards cards--duo" style="margin-top:0">
+      <article class="card reveal">
+        <div class="card__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 3v18M4 8h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="8" r="3" stroke="currentColor" stroke-width="1.8"/></svg>
+        </div>
+        <h3 class="h3">Two-degree-of-freedom structure &amp; high-speed friction launch mechanism</h3>
+        <p>
+          It has two degrees of freedom of pitch and yaw rotation. Combined with the four-roller
+          high-speed friction launch mechanism driven by two brushless motors, it can flexibly adjust
+          the launch angle and achieve long-distance, accurate launch of the self-inflating lifebuoy.
+        </p>
+        <div class="card__meta">Pitch + yaw · four rollers · twin brushless motors</div>
+      </article>
+
+      <article class="card reveal reveal-delay-1">
+        <div class="card__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12Z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="3.1" stroke="currentColor" stroke-width="1.8"/></svg>
+        </div>
+        <h3 class="h3">High-precision sensing and tracking system</h3>
+        <p>
+          Equipped with a high-definition, ultra-high-speed industrial camera sensor and matched with
+          the PID control algorithm, it locates and automatically tracks the drowning person in real
+          time across environments, providing reliable support for the rescue.
+        </p>
+        <div class="card__meta">Industrial camera · PID tracking loop</div>
+      </article>
+
+      <article class="card reveal reveal-delay-2">
+        <div class="card__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="3.5" y="3.5" width="17" height="17" rx="4" stroke="currentColor" stroke-width="1.8"/><path d="M8 15.5V12M12 15.5V8.5M16 15.5v-5" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg>
+        </div>
+        <h3 class="h3">Efficient software algorithm optimization</h3>
+        <p>
+          Based on 12,000 labelled drowning images and data augmentation technology, an exclusive
+          YOLOv8n model has been successfully trained, achieving 98.7% recognition accuracy and a
+          1.12% packet loss rate. AquaSentry runs local offline inference on an NVIDIA GeForce
+          RTX 3060 Laptop GPU, at only 2 ms per frame.
+        </p>
+        <div class="card__meta">12,000 images · 98.7% accuracy · 2 ms / frame</div>
+      </article>
+
+      <article class="card reveal">
+        <div class="card__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="6.5" y="6.5" width="11" height="11" rx="2.5" stroke="currentColor" stroke-width="1.8"/><path d="M10 3v3M14 3v3M10 18v3M14 18v3M3 10h3M3 14h3M18 10h3M18 14h3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <h3 class="h3">High-precision control &amp; multi-protocol communication</h3>
+        <p>
+          The control system is built on an STM32 self-developed development board and a
+          high-precision IMU inertial navigation chip. It supports multiple communication protocols
+          and keeps positioning and control accurate throughout the launch process.
+        </p>
+        <div class="card__meta">STM32 · high-precision IMU · multi-protocol</div>
+      </article>
+    </div>
+
+    <div class="reveal" style="margin-top:76px">
+      <span class="eyebrow">Technology in motion</span>
+      <h2 class="h2" style="font-size:clamp(24px,2.6vw,32px);margin-top:14px">
+        Watch the sensing loop and the model at work
+      </h2>
+    </div>
+
+    <div class="clips">
+      <article class="clip reveal">
+        <div class="clip__media">
+          <video src="assets/video/cardlist_right1.mp4" poster="assets/img/poster-sensing.jpg"
+                 controls muted loop playsinline preload="none"
+                 aria-label="AquaSentry tracking a target on the water"></video>
+        </div>
+        <div class="clip__body">
+          <span class="clip__tag">Sensing</span>
+          <h3 class="h3">High-precision sensing and tracking system</h3>
+          <p>
+            A high-definition, ultra-high-speed industrial camera sensor paired with a PID control
+            algorithm locates and automatically tracks the drowning person across environments in
+            real time — reliable support for the rescue that follows. The clip is raw field footage:
+            the box holds on the swimmer while the surface keeps moving.
+          </p>
+        </div>
+      </article>
+
+      <article class="clip reveal reveal-delay-1">
+        <div class="clip__media">
+          <video src="assets/video/cardlist_right2.mp4" poster="assets/img/poster-algorithm.jpg"
+                 controls muted loop playsinline preload="none"
+                 aria-label="Live output of the AquaSentry detection model"></video>
+        </div>
+        <div class="clip__body">
+          <span class="clip__tag">Algorithm</span>
+          <h3 class="h3">Efficient software algorithm optimisation</h3>
+          <p>
+            Trained on 12,000 labelled drowning images with data augmentation, the exclusive YOLOv8n
+            model reaches 98.7% recognition accuracy with a 1.12% packet loss rate — 2 ms per frame,
+            running locally on an RTX 3060 Laptop GPU. The clip walks through the aiming and launcher
+            control code that runs on the machine itself.
+          </p>
+        </div>
+      </article>
+    </div>
+
+    <div class="split reveal" style="margin-top:64px">
+      <figure class="split__media">
+        <img src="assets/img/banner-3-C8HXgVAi.jpg" alt="Drowning detection output of the AquaSentry vision model" />
+        <figcaption>Live detection output — the vision model isolates the drowning target from surface clutter.</figcaption>
+      </figure>
+      <div>
+        <span class="eyebrow">Built for the worst minute</span>
+        <h2 class="h2">Why automation matters on water</h2>
+        <p class="lead">
+          Drowning is one of the leading causes of accidental death worldwide, and in China fewer
+          than 11.34% of drowning incidents end in a successful rescue. Visibility under water is
+          poor, the surface is cluttered, and the window to intervene is short. AquaSentry removes
+          the slowest link in that chain — the moment someone has to notice.
+        </p>
+        <ul class="check-list">
+          <li>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="#e6fbfc"/><path d="M6 10.3l2.6 2.6L14 7.5" stroke="#0aa2ab" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Continuous monitoring instead of occasional human watch.</span>
+          </li>
+          <li>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="#e6fbfc"/><path d="M6 10.3l2.6 2.6L14 7.5" stroke="#0aa2ab" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>A lifebuoy reaches the person without a rescuer entering the water.</span>
+          </li>
+          <li>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="#e6fbfc"/><path d="M6 10.3l2.6 2.6L14 7.5" stroke="#0aa2ab" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>One 9 kg kit covers pools, lakes and post-disaster flood scenes.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TEAM ===================== -->
+<section class="section section--tint" id="team">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">The team</span>
+      <h2 class="h2">Six students, one robot, one shared obsession</h2>
+      <p class="lead">
+        We have been friends for a long time and come from the same robotics team. We trust each
+        other, we enjoy building together, and we share one ideal: to help others with our robot
+        building capabilities.
+      </p>
+    </div>
+
+    <figure class="clip clip--slogan reveal">
+      <div class="clip__media">
+        <video src="assets/video/team-slogan.mp4" poster="assets/img/poster-slogan.jpg"
+               controls playsinline preload="none" data-autoplay="off"
+               aria-label="The AquaSentry team delivering their slogan on camera"></video>
+      </div>
+      <figcaption>
+        <strong>In their own words</strong> — the whole team on camera, saying what AquaSentry
+        is built for.
+      </figcaption>
+    </figure>
+
+    <div class="team">
+      <article class="member member--feature reveal">
+        <img class="member__portrait" src="assets/img/team/yanfeng-li.jpg"
+             alt="Sam Li, CEO of AquaSentry" loading="lazy" />
+        <div class="member__story">
+          <span class="member__role">CEO</span>
+          <h3>Sam Li</h3>
+          <div class="member__cn">Project lead · strategy &amp; external affairs</div>
+          <p class="member__quote">
+            “If there had been a lifebuoy on the bank…” — a classmate drowned in the campus lake
+            last summer, and the body was only recovered at dawn because the water was too murky to
+            search.
+          </p>
+          <p>
+            Sam opens the film with that night and turns it into a direction: an FRC robot could be
+            built into a lifesaver. He framed the product thesis, led the team through the national
+            finals of the China International College Students' Innovation Competition, and owns the
+            roadmap, the strategy and every external conversation AquaSentry has.
+          </p>
+          <div class="member__tags">
+            <span>Vision &amp; strategy</span><span>National finals pitch</span><span>Partnerships</span>
+          </div>
+        </div>
+      </article>
+
+      <div class="team__grid">
+      <article class="member reveal">
+        <div class="member__head">
+          <img class="member__avatar" src="assets/img/team/angye-liu.jpg" alt="Angye Liu" loading="lazy" />
+          <div class="member__headtext">
+            <span class="member__role">CTO</span>
+            <h3>Angye Liu</h3>
+            <div class="member__cn">System architecture · autonomous patrol</div>
+          </div>
+        </div>
+        <p>
+          Angye presents the machine itself in the film: an AI-networked surface rescue robot that
+          identifies a drowning person on its own and patrols a lake 24 hours a day without an
+          operator. He owns the architecture — the control board, the drive and power system, the
+          link between perception and launcher, and the integration that makes four subsystems
+          behave as one unit on open water.
+        </p>
+        <div class="member__tags">
+          <span>System architecture</span><span>Control &amp; electronics</span><span>24/7 patrol</span>
+        </div>
+      </article>
+
+      <article class="member reveal reveal-delay-1">
+        <div class="member__head">
+          <img class="member__avatar" src="assets/img/team/chuhang-xu.jpg" alt="Chuhang Xu" loading="lazy" />
+          <div class="member__headtext">
+            <span class="member__role">Chief AI Officer</span>
+            <h3>Chuhang Xu</h3>
+            <div class="member__cn">Perception · real-time recognition</div>
+          </div>
+        </div>
+        <p>
+          Chuhang owns perception. In the film he stands on the bank and shows the robot picking a
+          swimmer in distress out of the water in real time, then cuts to the training scripts behind
+          it. He built the recognition pipeline — frame sampling, inference, target lock and the
+          trigger that fires the launcher — and validates it on real water rather than only on a
+          benchmark.
+        </p>
+        <div class="member__tags">
+          <span>Computer vision</span><span>Real-time detection</span><span>On-water validation</span>
+        </div>
+      </article>
+
+      <article class="member reveal reveal-delay-2">
+        <div class="member__head">
+          <img class="member__avatar" src="assets/img/team/kairui-yang.jpg" alt="Kairui Yang" loading="lazy" />
+          <div class="member__headtext">
+            <span class="member__role">Chief Data Officer</span>
+            <h3>Kairui Yang</h3>
+            <div class="member__cn">Dataset · model training &amp; optimisation</div>
+          </div>
+        </div>
+        <p>
+          Kairui built what the model learns from: a labelled library of drowning images that has now
+          passed 12,000 frames, expanded with data augmentation, and an exclusive YOLOv8n model
+          trained on it. His optimisation work brings inference down to 2 ms per frame at 98.7%
+          recognition accuracy, which is what makes a rescue decision possible before a person could
+          react.
+        </p>
+        <div class="member__tags">
+          <span>Dataset &amp; augmentation</span><span>YOLOv8n training</span><span>Inference speed</span>
+        </div>
+      </article>
+
+      <article class="member reveal">
+        <div class="member__head">
+          <img class="member__avatar" src="assets/img/team/zhengyuan-ni.jpg" alt="Zhengyuan Ni" loading="lazy" />
+          <div class="member__headtext">
+            <span class="member__role">Chief Product Officer</span>
+            <h3>Zhengyuan Ni</h3>
+            <div class="member__cn">Mechanical design · launch mechanism &amp; IP</div>
+          </div>
+        </div>
+        <p>
+          Zhengyuan turned the concept into hardware. He designed the two-degree-of-freedom arm and
+          the four-roller friction launcher that sends the self-inflating lifebuoy 10–30 m with
+          accuracy, and carried the design through to a granted utility-model patent; the algorithm
+          and system now hold a software copyright as well.
+        </p>
+        <div class="member__tags">
+          <span>Mechanical structure</span><span>Launcher</span><span>Patents &amp; IP</span>
+        </div>
+      </article>
+
+      <article class="member reveal reveal-delay-1">
+        <div class="member__head">
+          <img class="member__avatar" src="assets/img/team/hao-yang.jpg" alt="Hao Yang" loading="lazy" />
+          <div class="member__headtext">
+            <span class="member__role">Chief Marketing Officer</span>
+            <h3>Hao Yang</h3>
+            <div class="member__cn">Impact modelling · pilots &amp; business plan</div>
+          </div>
+        </div>
+        <p>
+          Hao makes the case in numbers. In the film he walks through the arithmetic of a drowning:
+          survival falls with every minute of delay, and Hydro AI-D stretches the golden rescue window
+          to 27 minutes. He turns that into pilots with schools, parks and reservoir operators,
+          public-interest campaigns, and the commercial plan behind the product.
+        </p>
+        <div class="member__tags">
+          <span>Impact modelling</span><span>Pilots &amp; outreach</span><span>Business plan</span>
+        </div>
+      </article>
+      </div>
+    </div>
+
+    <p class="note reveal">
+      <strong>Roles mirror the film.</strong> Each member presents the part of the system they built
+      in the competition film above — Sam opens with why the robot exists, and the team then walks
+      through the machine, perception, data, mechanics and impact in turn.
+    </p>
+  </div>
+</section>
+
+<!-- ===================== PARTNERS ===================== -->
+<section class="section" id="partners">
+  <div class="container">
+    <div class="section-head section-head--center reveal">
+      <span class="eyebrow">Potential partnership</span>
+      <h2 class="h2">Where AquaSentry belongs</h2>
+      <p class="lead">
+        Anywhere people swim, train or work next to water. We are looking for pilot sites and
+        partners to deploy the first units.
+      </p>
+    </div>
+
+    <div class="partners">
+      <article class="partner reveal">
+        <img src="assets/img/icon_school-C4iImB24.png" alt="Schools" />
+        <h3 class="h3">Schools</h3>
+        <p>Campus lakes, swimming programmes and boarding schools that need supervision beyond staffing limits.</p>
+      </article>
+      <article class="partner reveal reveal-delay-1">
+        <img src="assets/img/icon_park-CYBsFwny.png" alt="Parks" />
+        <h3 class="h3">Parks</h3>
+        <p>Public parks, waterfront promenades and scenic areas with open water and seasonal visitor peaks.</p>
+      </article>
+      <article class="partner reveal reveal-delay-2">
+        <img src="assets/img/icon_reser-K9ZKs4Dm.png" alt="Reservoirs" />
+        <h3 class="h3">Reservoirs</h3>
+        <p>Reservoirs, dams and flood-control facilities where remote water bodies stay unattended for days.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CTA ===================== -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="cta reveal">
+      <span class="eyebrow">Partner with us</span>
+      <h2>Bring AquaSentry to your water front</h2>
+      <p>
+        We are opening pilot deployments with schools, park authorities and reservoir operators.
+        Tell us about your site and we will come back with a deployment plan.
+      </p>
+      <div class="cta__row">
+        <a class="btn btn--primary" href="mailto:lilcash_2023@outlook.com">Start a conversation
+          <svg class="arrow" width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="btn btn--light" href="#film">Watch the film again</a>
+      </div>
+
+      <div class="contact">
+        <div class="contact__item">
+          <svg class="contact__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <rect x="7" y="2.5" width="10" height="19" rx="2.4" stroke="currentColor" stroke-width="1.7"/>
+            <path d="M10.6 18.4h2.8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+          </svg>
+          <span><span class="contact__label">Phone:</span> <a href="tel:+8613302335588">133 0233 5588</a></span>
+        </div>
+        <div class="contact__item">
+          <svg class="contact__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <rect x="2.6" y="5" width="18.8" height="14" rx="2.2" stroke="currentColor" stroke-width="1.7"/>
+            <path d="M3.4 6.6 12 13l8.6-6.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span><span class="contact__label">Email:</span> <a href="mailto:lilcash_2023@outlook.com">lilcash_2023@outlook.com</a></span>
+        </div>
+        <div class="contact__item contact__item--wide">
+          <svg class="contact__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 21.2s7-6.1 7-11.2a7 7 0 1 0-14 0c0 5.1 7 11.2 7 11.2Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+            <circle cx="12" cy="9.8" r="2.6" stroke="currentColor" stroke-width="1.7"/>
+          </svg>
+          <span><span class="contact__label">Address:</span> Tianhe District, Guangzhou City, Guangdong Province</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="brand" style="margin-bottom:14px">
+          <svg class="brand__mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+            <rect x="1.5" y="1.5" width="45" height="45" rx="13" fill="#0e5c6b"/>
+            <path d="M8 30c4.5 0 4.5-4 9-4s4.5 4 9 4 4.5-4 9-4 4.5 4 9 4" stroke="#12c2c8" stroke-width="2.6" stroke-linecap="round" fill="none"/>
+            <circle cx="24" cy="19" r="7.5" stroke="#ffffff" stroke-width="2.6" fill="none"/>
+            <path d="M24 11.5v15M16.5 19h15" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round"/>
+          </svg>
+          <span><span class="brand__name">AquaSentry</span></span>
+        </div>
+        <p style="font-size:15px;max-width:38ch">
+          An AI-powered water rescue robot that finds a drowning person and delivers a lifebuoy —
+          automatically.
+        </p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#technology">Technology</a></li>
+          <li><a href="#film">Competition film</a></li>
+          <li><a href="#team">Team</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Deploy</h4>
+        <ul>
+          <li><a href="#partners">Schools</a></li>
+          <li><a href="#partners">Parks</a></li>
+          <li><a href="#partners">Reservoirs</a></li>
+          <li><a href="#partners">Emergency response</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+8613302335588">+86 133 0233 5588</a></li>
+          <li><a href="mailto:lilcash_2023@outlook.com">lilcash_2023@outlook.com</a></li>
+          <li><a href="#contact">Pilot deployment</a></li>
+          <li><a href="https://www.aquasentry.cn" target="_blank" rel="noopener">aquasentry.cn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span id="year">2026</span> AquaSentry · Hydro AI-D project team. All rights reserved.</span>
+      <span>National Gold · Innovation Potential Award · China International College Students' Innovation Competition (2025)</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
