@@ -301,7 +301,7 @@ p { margin: 0; }
 .film__frame.is-playing .film__overlay { opacity: 0; visibility: hidden; }
 .film__play {
   width: 96px; height: 96px; border-radius: 0; display: grid; place-items: center;
-  background: rgba(255,255,255,.94); color: var(--ink); border: none;
+  background: transparent; color: #fff; border: none;
   box-shadow: none; transition: transform .3s var(--ease);
 }
 .film__overlay:hover .film__play { transform: scale(1.07); }
