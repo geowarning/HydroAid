@@ -13,6 +13,7 @@
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png?v=1" />
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=1" />
 <link rel="stylesheet" href="assets/css/style.css?v=play-button-2" />
+<link rel="stylesheet" href="assets/css/sequence.css" />
 </head>
 <body>
 
@@ -199,6 +200,94 @@
         <b><span data-count="1.12" data-decimals="2">0</span><i>%</i></b>
         <span>Packet loss rate</span>
         <p>Stable multi-protocol link between vision, control and launcher.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== HOW AQUASENTRY WORKS ===================== -->
+<section class="section sequence-section" id="how-it-works" aria-labelledby="sequence-title">
+  <div class="container">
+    <div class="sequence-heading">
+      <div><span class="eyebrow">How AquaSentry works</span><h2 class="h2" id="sequence-title">From detection to delivery</h2></div>
+      <p class="lead">Follow the path from a person in the water to a self-inflating lifebuoy. This animation illustrates the concept; it is not test footage.</p>
+    </div>
+    <div class="sequence" data-sequence>
+      <div class="sequence-scene">
+        <svg viewBox="0 0 960 430" role="img" aria-labelledby="sequence-svg-title sequence-svg-desc">
+          <title id="sequence-svg-title">AquaSentry rescue sequence</title>
+          <desc id="sequence-svg-desc">An illustration shows the AquaSentry launcher beside water, detecting and tracking a person, estimating distance and elevation, aiming, and delivering an inflatable lifebuoy.</desc>
+          <defs>
+            <linearGradient id="sequence-water" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d9f0f1"/><stop offset="1" stop-color="#a7d9df"/></linearGradient>
+            <linearGradient id="sequence-person-ink" x1="0" y1="16" x2="0" y2="28" gradientUnits="userSpaceOnUse"><stop stop-color="#173e4b"/><stop offset="1" stop-color="#4b9da5"/></linearGradient>
+            <pattern id="sequence-grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#e4eff0" stroke-width="1"/></pattern>
+          </defs>
+          <rect width="960" height="430" fill="#f8fbfb"/>
+          <rect width="960" height="285" fill="url(#sequence-grid)"/>
+          <path d="M365 286H960V430H365Z" fill="url(#sequence-water)"/>
+          <path d="M365 286H960" stroke="#4b9da5" stroke-width="2"/>
+          <path d="M405 322h98m40 38h124m63-43h141m-218 83h105m38-38h96" stroke="#fff" stroke-width="2" opacity=".6"/>
+          <path d="M0 286H365V430H0Z" fill="#e7eeee"/>
+          <path d="M0 286H365" fill="none" stroke="#94b3b6" stroke-width="2"/>
+          <text x="42" y="52" class="sequence-svg-kicker">AQUASENTRY</text>
+          <text x="42" y="75" class="sequence-svg-small">Launcher assembly</text>
+          <text x="914" y="52" text-anchor="end" class="sequence-svg-kicker">ILLUSTRATIVE SEQUENCE</text>
+          <path data-scan d="M284 152L730 192L730 296Z" fill="#12c2c8" fill-opacity=".08" stroke="#1597a3" stroke-opacity=".35" stroke-width="1.5"/>
+          <path data-aim d="M283 156L708 245" fill="none" stroke="#dd744e" stroke-width="2" stroke-dasharray="7 7" opacity="0"/>
+          <path data-trajectory d="M283 156Q490 31.6 715 286" fill="none" stroke="#e56941" stroke-width="2.5" stroke-dasharray="5 8" opacity="0"/>
+          <image href="assets/img/banner-1-gIGYr_IW.png" x="48" y="76" width="258" height="220" preserveAspectRatio="xMidYMid meet" style="mix-blend-mode:multiply"/>
+          <g data-distance-measure opacity="0" fill="none" stroke="#087b85" stroke-width="2">
+            <path data-distance-line d="M315 378H715M315 369v18M715 369v18"/>
+            <path d="M326 372l-11 6 11 6"/><path data-distance-arrow d="M704 372l11 6-11 6"/>
+          </g>
+          <text data-distance-label x="515" y="400" text-anchor="middle" opacity="0" class="sequence-svg-measure">d = 9 m · simulated</text>
+          <g data-angle-measure opacity="0" fill="none" stroke="#d35f3c" stroke-width="2">
+            <path d="M310 146h78M310 146l70-42"/>
+            <path d="M350 146a40 40 0 0 0-5.7-20.6"/>
+          </g>
+          <text data-angle-label x="388" y="104" opacity="0" class="sequence-svg-measure sequence-svg-measure--angle" data-angle-text>θ ≈ 31° · simulated</text>
+          <path d="M38 287H329" stroke="#173e4b" stroke-width="5"/>
+          <text x="42" y="365" class="sequence-svg-small">Robot illustration based on the product CAD</text>
+          <g data-person transform="translate(685 267)">
+            <g fill="none" stroke="url(#sequence-person-ink)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+              <path data-leg-left d="M-5 38L-15 55l-10 12"/>
+              <path data-leg-right d="M5 38l15 15 5 14"/>
+              <path d="M0 15v25" stroke-width="12"/>
+              <path data-arm-left d="M-6 19l-18-12-12-19"/>
+              <path data-arm-right d="M6 19L24 7l12-19"/>
+            </g>
+            <circle cx="0" cy="0" r="12" fill="#173e4b"/>
+          </g>
+          <g data-target opacity="0" fill="none" stroke="#088b93" stroke-width="2.5">
+            <path d="M-52 -25v-19h19M33-44h19v19M52 57v19H33M-33 76h-19V57"/>
+            <path d="M-3 -44h6M-3 76h6"/>
+          </g>
+          <g data-capsule opacity="0"><rect x="-13" y="-7" width="26" height="14" rx="7" fill="#f19b40" stroke="#9c4c18" stroke-width="2"/><path d="M-2-7v14M3-7v14" stroke="#fff" stroke-width="2"/></g>
+          <g data-buoy opacity="0"><ellipse rx="38" ry="13" fill="none" stroke="#ed754e" stroke-width="10"/><path d="M-33-6l8 4m50 0 8-4M-31 8l8-4m46 0 8 4" stroke="#fff" stroke-width="5"/></g>
+          <circle data-splash cx="0" cy="0" r="1" fill="none" stroke="#fff" stroke-width="3" opacity="0"/>
+        </svg>
+      </div>
+      <div class="sequence-details">
+        <div class="sequence-stage" aria-live="polite" aria-atomic="true"><span class="sequence-stage__number" data-sequence-number>01 / 05</span><div><h3 data-sequence-title>Detect</h3><p data-sequence-description>The camera monitors the water for a person in distress.</p></div></div>
+        <div class="sequence-calculation" data-sequence-calculation hidden>
+          <p class="sequence-calculation__label">Simulated example · not actual robot measurements</p>
+          <ol aria-label="Example calculation inputs"><li>Distance <b>d = 9 m</b></li><li>Launch speed <b>v = 10 m/s</b></li><li>Gravity <b>g = 9.81 m/s²</b></li></ol>
+          <p class="sequence-equation" data-sequence-equation>θ = ½ sin⁻¹((9.81 × 9) / 10²) ≈ 31.0°</p>
+          <p>Idealized example: launch and landing at the same height, with no air resistance or wind. The scene is not to scale; actual robot settings depend on its measurements and calibration.</p>
+        </div>
+        <div class="sequence-controls" data-sequence-controls hidden>
+          <button type="button" class="sequence-play" data-sequence-play>Play animation</button>
+          <button type="button" class="sequence-replay" data-sequence-replay>Replay</button>
+          <div class="sequence-timeline"><label for="sequence-progress">Animation progress</label><input id="sequence-progress" data-sequence-progress type="range" min="0" max="100" value="0" aria-valuetext="0 seconds of 10 seconds"/><span data-sequence-time>0:00 / 0:10</span></div>
+        </div>
+        <div class="sequence-steps" data-sequence-steps hidden aria-label="Jump to a step">
+          <button type="button" data-sequence-step="0" aria-current="step"><span>01</span> Detect</button>
+          <button type="button" data-sequence-step="1"><span>02</span> Track</button>
+          <button type="button" data-sequence-step="2"><span>03</span> Calculate</button>
+          <button type="button" data-sequence-step="3"><span>04</span> Aim</button>
+          <button type="button" data-sequence-step="4"><span>05</span> Launch</button>
+        </div>
+        <noscript><p class="sequence-noscript">Enable JavaScript to play the animation. AquaSentry detects, tracks, aims and launches a self-inflating lifebuoy.</p></noscript>
       </div>
     </div>
   </div>
@@ -722,5 +811,6 @@
 </footer>
 
 <script src="assets/js/main.js"></script>
+<script src="assets/js/sequence.js" defer></script>
 </body>
 </html>

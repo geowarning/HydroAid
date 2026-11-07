@@ -1,0 +1,50 @@
+.sequence-section { background: #fff; padding-top: clamp(56px, 6vw, 90px); }
+.sequence-heading { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; align-items: end; margin-bottom: 32px; }
+.sequence-heading .lead { font-size: 16px; max-width: 55ch; }
+.sequence { border-top: 2px solid #06232f; border-bottom: 1px solid #c9dadd; }
+.sequence-scene { background: #f8fbfb; overflow: hidden; }
+.sequence-scene svg { width: 100%; height: auto; display: block; }
+.sequence-svg-kicker { font: 700 12px Inter, sans-serif; fill: #285c68; letter-spacing: .13em; }
+.sequence-svg-small { font: 13px Inter, sans-serif; fill: #61808a; }
+.sequence-details { padding: 28px 0 0; }
+.sequence-stage { min-height: 78px; display: flex; gap: 24px; align-items: baseline; }
+.sequence-stage__number { font-size: 12px; font-weight: 700; letter-spacing: .08em; color: #247781; white-space: nowrap; }
+.sequence-stage h3 { font-size: 25px; margin: 0 0 6px; }
+.sequence-stage p { color: #537784; font-size: 15px; }
+.sequence-controls { display: flex; gap: 12px; align-items: center; padding: 12px 0 26px; }
+.sequence-controls[hidden], .sequence-steps[hidden] { display: none; }
+.sequence-play, .sequence-replay { font: 600 14px Inter, sans-serif; min-height: 46px; padding: 0 18px; cursor: pointer; }
+.sequence-play { border: 1px solid #06232f; background: #06232f; color: white; min-width: 155px; }
+.sequence-replay { border: 1px solid #a5bfc3; background: #fff; color: #06232f; }
+.sequence-play:hover { background: #134657; }
+.sequence-replay:hover { background: #f1f8f8; }
+.sequence-timeline { display: flex; align-items: center; gap: 14px; flex: 1; margin-left: 14px; }
+.sequence-timeline label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.sequence-timeline input { width: 100%; accent-color: #087b85; cursor: pointer; }
+.sequence-timeline span { font-size: 12px; color: #537784; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.sequence-steps { display: grid; grid-template-columns: repeat(5,1fr); border-top: 1px solid #d1e1e3; }
+.sequence-steps button { text-align: left; padding: 18px 10px 18px 0; background: transparent; border: 0; border-top: 3px solid transparent; color: #718b92; font-size: 14px; cursor: pointer; }
+.sequence-steps button span { margin-right: 8px; font-size: 11px; }
+.sequence-steps button[aria-current="step"] { border-top-color: #0a929a; color: #06232f; font-weight: 700; }
+.sequence button:focus-visible, .sequence input:focus-visible { outline: 3px solid #087b85; outline-offset: 4px; }
+.sequence-noscript { padding: 12px 0 24px; color: #537784; }
+@media (max-width: 760px) {
+  .sequence-heading { grid-template-columns: 1fr; gap: 16px; }
+  .sequence-stage { min-height: 96px; gap: 16px; }
+  .sequence-controls { flex-wrap: wrap; }
+  .sequence-timeline { flex-basis: 100%; margin: 8px 0 0; }
+  .sequence-steps button { font-size: 12px; }
+  .sequence-steps button span { display: block; margin: 0 0 5px; }
+  .sequence-svg-small { font-size: 15px; }
+}
+
+.sequence-svg-measure { font: 700 15px Inter, sans-serif; fill: #087b85; }
+.sequence-svg-measure--angle { fill: #b94f31; }
+.sequence-calculation { padding: 18px 0 20px; border-top: 1px solid #d1e1e3; }
+.sequence-calculation[hidden] { display: none; }
+.sequence-calculation__label { color: #247781; font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.sequence-calculation ol { list-style: none; padding: 0; margin: 12px 0; display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; color: #06232f; font-size: 15px; }
+.sequence-calculation li + li::before { content: "→"; color: #247781; margin-right: 16px; }
+.sequence-calculation .sequence-equation { font-size: 18px; font-weight: 700; color: #06232f; margin: 14px 0; overflow-wrap: anywhere; }
+.sequence-calculation p:last-child { color: #537784; font-size: 14px; }
+@media (max-width: 420px) { .sequence-steps button { font-size: 11px; } .sequence-calculation li + li::before { margin-right: 8px; } }
