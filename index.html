@@ -35,10 +35,10 @@
 
     <nav class="nav__links" aria-label="Main">
       <a href="#overview">Overview</a>
-      <a href="#technology">Technology</a>
       <a href="#film">Film</a>
-      <a href="#team">Team</a>
+      <a href="#technology">Technology</a>
       <a href="#partners">Deployment</a>
+      <a href="#team">Team</a>
     </nav>
 
     <a class="btn btn--light nav__cta" href="#contact">Partner with us</a>
@@ -81,12 +81,7 @@
           <a class="btn btn--light" href="#technology">Explore the technology</a>
         </div>
 
-        <div class="hero__stats">
-          <div class="hero__stat"><span>98.7<i>%</i></span><small>Recognition accuracy</small></div>
-          <div class="hero__stat"><span>2<i>ms</i></span><small>Inference per frame</small></div>
-          <div class="hero__stat"><span>9<i>kg</i></span><small>Total system weight</small></div>
-          <div class="hero__stat"><span>24/7</span><small>Autonomous monitoring</small></div>
-        </div>
+
       </div>
 
       <div class="hero__visual">
@@ -96,6 +91,12 @@
         <div class="hero__pill hero__pill--a"><i class="hero__dot"></i> Target locked · lifebuoy armed</div>
         <div class="hero__pill hero__pill--b"><i class="hero__dot"></i> Two-person carry · deployed in 60 s</div>
       </div>
+        <div class="hero__stats">
+          <div class="hero__stat"><span>98.7<i>%</i></span><small>Recognition accuracy</small></div>
+          <div class="hero__stat"><span>2<i>ms</i></span><small>Inference per frame</small></div>
+          <div class="hero__stat"><span>9<i>kg</i></span><small>Total system weight</small></div>
+          <div class="hero__stat"><span>24/7</span><small>Autonomous monitoring</small></div>
+        </div>
     </div>
   </div>
 
@@ -136,7 +137,7 @@
     <figure class="clip clip--wide reveal">
       <div class="clip__media">
         <video src="assets/video/introduction.mp4" poster="assets/img/poster-introduction.jpg"
-               muted loop playsinline preload="none"
+               controls muted loop playsinline preload="none"
                aria-label="Exploded assembly animation of the AquaSentry platform"></video>
       </div>
       <figcaption>
@@ -209,6 +210,51 @@
   </div>
 </section>
 
+<!-- ===================== FILM ===================== -->
+<section class="section section--tint" id="film">
+  <div class="container">
+    <div class="section-head section-head--center reveal">
+      <span class="eyebrow">The film</span>
+      <h2 class="h2">AquaSentry at the China International College Students' Innovation Competition</h2>
+      <p class="lead">
+        The official promotional film presented at the national finals — where the team took the
+        Innovation Potential Award, the highest gold-level honour of the competition's
+        Emerging Talent track, granted to only 20 projects nationwide.
+      </p>
+    </div>
+
+    <figure class="film__frame reveal" id="film-frame">
+      <video id="promo-video" controls playsinline preload="metadata"
+             poster="assets/img/film-poster.jpg"
+             src="assets/video/aquasentry-competition-film.mp4"></video>
+      <div class="film__overlay">
+        <button class="film__play" type="button" aria-label="Play the promotional film">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M8 5.5v13l11-6.5-11-6.5Z" fill="currentColor"/>
+          </svg>
+        </button>
+        <figcaption class="film__caption">
+          Official competition film · Hydro AI-D · presented by the AquaSentry team
+        </figcaption>
+      </div>
+    </figure>
+
+    <div class="film__meta reveal">
+      <span class="chip">China International College Students' Innovation Competition (2025)</span>
+      <span class="chip">Innovation Potential Award · National Gold</span>
+      <span class="chip">Top 20 projects nationwide</span>
+      <span class="chip">1 invention patent · 1 software copyright</span>
+      <span class="chip">Runtime 1:36</span>
+    </div>
+
+    <p class="note reveal">
+      <strong>In the film:</strong> the team walks through why the robot exists, how the vision model was
+      trained, how the two-degree-of-freedom launcher was engineered, and what a faster response
+      means for the people still in the water.
+    </p>
+  </div>
+</section>
+
 <!-- ===================== PIPELINE ===================== -->
 <section class="section section--ink">
   <div class="container">
@@ -244,51 +290,6 @@
         <em>Long-range, precise delivery</em>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- ===================== FILM ===================== -->
-<section class="section section--tint" id="film">
-  <div class="container">
-    <div class="section-head section-head--center reveal">
-      <span class="eyebrow">The film</span>
-      <h2 class="h2">AquaSentry at the China International College Students' Innovation Competition</h2>
-      <p class="lead">
-        The official promotional film presented at the national finals — where the team took the
-        Innovation Potential Award, the highest gold-level honour of the competition's
-        Emerging Talent track, granted to only 20 projects nationwide.
-      </p>
-    </div>
-
-    <figure class="film__frame reveal" id="film-frame">
-      <video id="promo-video" playsinline preload="metadata"
-             poster="assets/img/film-poster.jpg"
-             src="assets/video/aquasentry-competition-film.mp4"></video>
-      <div class="film__overlay">
-        <button class="film__play" type="button" aria-label="Play the promotional film">
-          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M8 5.5v13l11-6.5-11-6.5Z" fill="currentColor"/>
-          </svg>
-        </button>
-        <figcaption class="film__caption">
-          Official competition film · Hydro AI-D · presented by the AquaSentry team
-        </figcaption>
-      </div>
-    </figure>
-
-    <div class="film__meta reveal">
-      <span class="chip">China International College Students' Innovation Competition (2025)</span>
-      <span class="chip">Innovation Potential Award · National Gold</span>
-      <span class="chip">Top 20 projects nationwide</span>
-      <span class="chip">1 invention patent · 1 software copyright</span>
-      <span class="chip">Runtime 1:36</span>
-    </div>
-
-    <p class="note reveal">
-      <strong>In the film:</strong> the team walks through why the robot exists, how the vision model was
-      trained, how the two-degree-of-freedom launcher was engineered, and what a faster response
-      means for the people still in the water.
-    </p>
   </div>
 </section>
 
@@ -433,6 +434,38 @@
           </li>
         </ul>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PARTNERS ===================== -->
+<section class="section" id="partners">
+  <div class="container">
+    <div class="section-head section-head--center reveal">
+      <span class="eyebrow">Potential partnership</span>
+      <h2 class="h2">Where AquaSentry belongs</h2>
+      <p class="lead">
+        Anywhere people swim, train or work next to water. We are looking for pilot sites and
+        partners to deploy the first units.
+      </p>
+    </div>
+
+    <div class="partners">
+      <article class="partner reveal">
+        <img src="assets/img/icon_school-C4iImB24.png" alt="Schools" />
+        <h3 class="h3">Schools</h3>
+        <p>Campus lakes, swimming programmes and boarding schools that need supervision beyond staffing limits.</p>
+      </article>
+      <article class="partner reveal reveal-delay-1">
+        <img src="assets/img/icon_park-CYBsFwny.png" alt="Parks" />
+        <h3 class="h3">Parks</h3>
+        <p>Public parks, waterfront promenades and scenic areas with open water and seasonal visitor peaks.</p>
+      </article>
+      <article class="partner reveal reveal-delay-2">
+        <img src="assets/img/icon_reser-K9ZKs4Dm.png" alt="Reservoirs" />
+        <h3 class="h3">Reservoirs</h3>
+        <p>Reservoirs, dams and flood-control facilities where remote water bodies stay unattended for days.</p>
+      </article>
     </div>
   </div>
 </section>
@@ -598,38 +631,6 @@
       in the competition film above — Sam opens with why the robot exists, and the team then walks
       through the machine, perception, data, mechanics and impact in turn.
     </p>
-  </div>
-</section>
-
-<!-- ===================== PARTNERS ===================== -->
-<section class="section" id="partners">
-  <div class="container">
-    <div class="section-head section-head--center reveal">
-      <span class="eyebrow">Potential partnership</span>
-      <h2 class="h2">Where AquaSentry belongs</h2>
-      <p class="lead">
-        Anywhere people swim, train or work next to water. We are looking for pilot sites and
-        partners to deploy the first units.
-      </p>
-    </div>
-
-    <div class="partners">
-      <article class="partner reveal">
-        <img src="assets/img/icon_school-C4iImB24.png" alt="Schools" />
-        <h3 class="h3">Schools</h3>
-        <p>Campus lakes, swimming programmes and boarding schools that need supervision beyond staffing limits.</p>
-      </article>
-      <article class="partner reveal reveal-delay-1">
-        <img src="assets/img/icon_park-CYBsFwny.png" alt="Parks" />
-        <h3 class="h3">Parks</h3>
-        <p>Public parks, waterfront promenades and scenic areas with open water and seasonal visitor peaks.</p>
-      </article>
-      <article class="partner reveal reveal-delay-2">
-        <img src="assets/img/icon_reser-K9ZKs4Dm.png" alt="Reservoirs" />
-        <h3 class="h3">Reservoirs</h3>
-        <p>Reservoirs, dams and flood-control facilities where remote water bodies stay unattended for days.</p>
-      </article>
-    </div>
   </div>
 </section>
 

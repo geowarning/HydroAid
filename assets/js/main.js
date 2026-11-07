@@ -25,9 +25,20 @@
       toggle.setAttribute('aria-expanded', String(open));
     });
     $$('.nav__links a').forEach((a) =>
-      a.addEventListener('click', () => nav.classList.remove('is-open'))
+      a.addEventListener('click', () => {
+        nav.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+      })
     );
   }
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && nav.classList.contains('is-open')) {
+      nav.classList.remove('is-open');
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.focus();
+    }
+  });
 
   /* ---------- Scroll reveal ---------- */
   const revealables = $$('.reveal');
@@ -178,7 +189,7 @@
       e.preventDefault();
       const offset = 84;
       const top = target.getBoundingClientRect().top + window.scrollY - offset;
-      window.scrollTo({ top, behavior: 'smooth' });
+      window.scrollTo({ top, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
     });
   });
 
